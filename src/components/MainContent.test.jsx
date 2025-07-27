@@ -16,6 +16,7 @@ describe("MainContent", () => {
 
     const button = screen.getByRole("button")
     await userEvent.click(button)
+    // comment
     expect(screen.getByTestId("help-area")).toBeInTheDocument()
   })
 })
