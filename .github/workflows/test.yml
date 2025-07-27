@@ -4,11 +4,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug directory structure
-        run: |
-          pwd
-          ls -la
-          find . -type d -name "*project*"
+      - name: Get code
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
